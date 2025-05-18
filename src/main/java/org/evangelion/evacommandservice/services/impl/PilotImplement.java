@@ -19,8 +19,8 @@ public class PilotImplement implements PilotService {
     }
 
     @Override
-    public void save(Pilot pilot) {
-        pilotRepository.save(pilot);
+    public Pilot save(Pilot pilot) {
+        return pilotRepository.save(pilot);
 
     }
 
